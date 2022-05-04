@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel = "stylesheet" href="home.css"> 
+<title>Ross Training school </title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }    
+    </style>
+</head>
+<body>
+    <img src='111.jpg' alt="Flowers in Chania" width="100" height="100">
+    <h2> Ross Training School</h2>
+    
+    <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li><a href="Course.html">Course</a></li>
+      </ul>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="1.jpg">
+  <img class="mySlides" src="2.jpg">
+  <img class="mySlides" src="3.png">
+ 
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div class="header">
+  <h2>Welcome to the official website of ross training school!</h2>
+  <p>Let children love life</p>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:rgb(0, 177, 80);">
+    <img src='home1.jpg' alt="Flowers in Chania" width="180" height="240">
+  <p>school environment</p></div>
+  <div class="column" style="background-color:rgb(2, 99, 15);">
+    <img src='home2.jpg' alt="Flowers in Chania" width="210" height="240">
+    <p>school news</p></div>
+  <div class="column" style="background-color:rgb(58, 147, 3);"><p>Our school values：Good people are rewarded, kindness is reported</p>
+    <p>and more...</p></div>
+  
+</div>
+
+<body>
+  <script type="text/javascript" src="index.js"></script>
+  </body>
+    <p>enter Student ID or parent name</p>   
+    <input type="Text1" id="Text1" value="">  
+   
+    
+    <button onclick ="myFunction()">Try it</button> 
+    <p id="demo"></p>
+  
+
+
+
+<div class="footer">
+  <p>Design: Bradley</p>
+  <p>Address: Shuonan Street, Ningbo City</p>
+  <p>Tel: 1234567890</p>
+</div>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+  
+  
+</body>
+</html>
